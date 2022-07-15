@@ -1,0 +1,16 @@
+
+module_name: posTransAgg
+class_name: PosTransAggregation
+
+sources:
+    - file_path: "/home/dwari/workspace/data/CardBase.csv"
+      format: "csv"
+      view_name: "vw_CardBase"
+
+    - file_path: "/home/dwari/workspace/data/CustomerBase.csv"
+      format: "csv"
+      view_name: "vw_CustomerBase"
+
+    - file_path: "/home/dwari/workspace/data/TransactionBase.csv"
+      format: "csv"
+      view_name: "vw_TransactionBase"
