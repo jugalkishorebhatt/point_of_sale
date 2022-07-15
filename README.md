@@ -6,7 +6,7 @@
 ### Prerequisite
 ### Architecture 
 [Place Holder]
-![Lucid Image!](Business process flow example.jpeg)
+![Lucid Image!](Business.jpeg)
 
 ### Application Overview
 ### Project Usecase
