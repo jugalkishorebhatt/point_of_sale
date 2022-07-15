@@ -6,7 +6,7 @@
 ### Prerequisite
 ### Architecture 
 [Place Holder]
-<img src="[https://lucid.app/lucidchart/a1847c3a-c29f-4bb3-a7ae-6ae77645c390/edit?beaconFlowId=989A135E68BB00C3&page=m-5o7ONTd-nK&invitationId=inv_e42f2b64-46af-499f-bf96-ee651f9e9558#](https://lucid.app/lucidchart/a1847c3a-c29f-4bb3-a7ae-6ae77645c390/edit?viewport_loc=63%2C-259%2C2530%2C1299%2Cm-5o7ONTd-nK&invitationId=inv_e42f2b64-46af-499f-bf96-ee651f9e9558#)">
+<div style="width: 640px; height: 480px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embedded/a1847c3a-c29f-4bb3-a7ae-6ae77645c390" id="_dRyzC61hxT3"></iframe></div>
 
 ### Application Overview
 ### Project Usecase
