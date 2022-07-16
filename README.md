@@ -34,7 +34,7 @@ Essential parameters required are the module and class name. With other user def
 #### <u>posTrans</u>
 Instanciates dependent application dynamically depending on the module and the class name provided in the config.yaml file
 
-#### <u>comon</u>
+#### <u>common</u>
 List of functions which are common across the application.
 
 #### <u>posTransAgg</u>
