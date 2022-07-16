@@ -12,7 +12,7 @@ Below are the list of softwares required to run the application:
 3) Docker
 
 ### Architecture 
-![Lucid Image!](https://user-images.githubusercontent.com/18581106/179350169-36f80089-1248-4997-a5e2-a0665113e134.jpe)
+![POS APP!](https://user-images.githubusercontent.com/18581106/179350169-36f80089-1248-4997-a5e2-a0665113e134.jpeg)
 
 ### Application Overview
 
@@ -38,6 +38,11 @@ https://github.com/jugalkishorebhatt/point_of_sale/
 ### Execution
 POS Application being build on pyspark. Below is the snippet of how the application is run. Users are bound to add dependent .py files required to run the specific part of their application. 
 
+Command:
+
+spark-submit --master "local[*]" --py-files posTransAgg.py,posTrans.py,common.py posTransJob.py --config config.yaml
+
 ### unit Testing
 Below is the command to run the unit test:
+
 python3.6 -m unittest run test.PosTestCase
