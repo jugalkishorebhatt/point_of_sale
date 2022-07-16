@@ -2,13 +2,13 @@
 
 ## Table of Content
 
-#### - Introduction
-#### - Prerequisite
-#### - Architecture
-#### - Application Overview
-#### - Github link
-#### - Execution
-#### - Unit Testing
+* Introduction
+* Prerequisite
+* Architecture
+* Application Overview
+* Github link
+* Execution
+* Unit Testing
 
 
 ### Introduction:
