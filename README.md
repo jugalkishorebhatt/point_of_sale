@@ -26,7 +26,7 @@ Below are the list of softwares required to run the application:
 ### Application Overview:
 
 #### <u>posTransJob</u>
-Main application wihch triggers necessary functions and upload the config file. Which list on how the application should execute.
+Main application wihch triggers necessary functions and upload the config file. config has the defined list parameters, which drives on how the application should execute.
 
 #### <u>config.yaml</u>
 Essential parameters required are the module and class name. With other user defined parameters required to make the users part of application interactive.
