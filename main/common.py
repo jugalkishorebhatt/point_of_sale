@@ -1,8 +1,14 @@
 # !/usr/bin/python
 
+############################################################################################
+# file_name: common.py
+# Objective: Intermediate class to make calls to other classes dynamically 
+#
+# References:
 # https://stackoverflow.com/questions/71934624/creating-a-yaml-file-for-checking-which-userd-id-belongs-to-which-team
 # https://www.tutorialspoint.com/pyspark/pyspark_sparkfiles.html
-
+#
+############################################################################################
 
 import logging
 import traceback
@@ -10,9 +16,6 @@ import yaml
 import sys
 from pyspark.sql.session import SparkSession
 from pyspark.files import SparkFiles
-
-
-
 
 logging.basicConfig(
     format = '[[POS_%(filename)s:%(lineno)s :] %(asctime)s, %(msecs)d %(name)s %(levelname)s %(message)s', 

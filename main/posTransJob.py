@@ -1,7 +1,14 @@
+# !/usr/bin/python
+
+############################################################################################
+# file_name: posTransJob.py
+# Objective: Main class 
+#
+# References:
 # https://stackoverflow.com/questions/54531444/valueerror-must-start-with-a-character
 # https://stackoverflow.com/questions/37626662/get-yaml-key-value-in-python
-
-# !/usr/bin/python
+#
+############################################################################################
 
 import logging
 import traceback
@@ -38,7 +45,6 @@ if __name__ == "__main__":
             sys.exit(1)
 
     try:
-        #posTrans.PosTrans().__PosTrans__caller(CommonFunctions,config)
         pos = posTrans.PosTrans()
         pos.caller(CommonFunctions,config)
     except Exception as e:

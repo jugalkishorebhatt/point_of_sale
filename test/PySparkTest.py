@@ -1,3 +1,14 @@
+# !/usr/bin/python
+
+############################################################################################
+# file_name: PySparkTest.py
+# Objective: Initialises Spark Session
+#
+# References:
+# 
+#
+############################################################################################
+
 import unittest
 import logging
 

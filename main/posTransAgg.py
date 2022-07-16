@@ -1,4 +1,13 @@
+# !/usr/bin/python
+
+############################################################################################
+# file_name: posTransAgg.py
+# Objective: Aggregates data at both customer and transaction level. 
+#
+# References:
 # https://stackoverflow.com/questions/43232169/converting-a-dataframe-into-json-in-pyspark-and-then-selecting-desired-fields
+#
+############################################################################################
 
 import logging
 import traceback
@@ -15,19 +24,24 @@ class PosTransAggregation:
         self.config = config
         self.CommonFunctions = CommonFunctions
     
+    """
+        Prints the output to STDOUT in JSON format
+    """
     def print_json(data):
         results = data.toJSON().collect()
         for i in results:
             print(i)
     
+    """
+        Execution Layer to create dataframes and find aggregates for different customers and credit card
+        transactions
+    """
     def execute(self):
         try:
             for source in self.config.get("sources"):
                 data = self.CommonFunctions.read_files(source.get("format"),source.get("file_path"))
                 data.createOrReplaceTempView(source.get("view_name"))
 
-            #results = data.toJSON().map(lambda j: json.loads(j)).collect()
-            #for i in results: print ("{{'Card_Number':{0},'Card_Family':{1}}}".format(i["Card_Number"], i["Card_Family"]))
             print("PosTransAggregation: Total credit card transaction value by month")
             trans_base = self.CommonFunctions.spark.sql("select months, \
                                                    sum(cast(Transaction_Value as Decimal(18,0))) as Transaction_Value  \

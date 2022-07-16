@@ -1,4 +1,13 @@
+# !/usr/bin/python
+
+############################################################################################
+# file_name: posTrans.py
+# Objective: Intermediate class to make calls to other classes dynamically 
+#
+# References:
 # https://stackoverflow.com/questions/2447353/getattr-on-a-module
+#
+############################################################################################
 
 import logging
 import traceback
@@ -14,10 +23,11 @@ class PosTrans:
     def __init__(self):
         pass
 
-    def caller(self,CommonFunctions,config):
-        """
+    """
         Base class to redirect instance calls to necessary modules
-        """
+    """
+    def caller(self,CommonFunctions,config):
+        
         try:
             common.logger.info("Module Name :{0}".format(config.get("module_name", None)))
             common.logger.info("Class Name :{0}".format(config.get("class_name", None)))
