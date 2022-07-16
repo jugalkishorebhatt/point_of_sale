@@ -20,7 +20,6 @@ class PosTestCase(PySparkTest):
     def setUp(self):
         yaml_file = "/home/dwari/workspace/main/config.yaml"       
         self.CommonFunctions = common.CommonFunctions("POS_Transactions_Test")
-        #self.config = yaml.load(open(yaml_file,'r'))
         self.config = self.CommonFunctions.load_yaml(yaml_file)
 
     def test_load_yaml(self):

@@ -18,7 +18,7 @@ from pyspark.sql.session import SparkSession
 from pyspark.files import SparkFiles
 
 logging.basicConfig(
-    format = '[[POS_%(filename)s:%(lineno)s :] %(asctime)s, %(msecs)d %(name)s %(levelname)s %(message)s', 
+    format = '[[POS_%(filename)s:%(lineno)s :] %(asctime)s, %(name)s, %(levelname)s, %(message)s', 
     datefmt = '%Y-%m-%d %H:%M:%S', 
     level = logging.INFO)
     
