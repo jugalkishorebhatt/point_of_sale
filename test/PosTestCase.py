@@ -30,10 +30,6 @@ class PosTestCase(PySparkTest):
         assert self.CommonFunctions is not None
 
     def test_read_files(self):
-        #test_rdd = self.spark.sparkContext.parallelize(["cat dog mouse","cat cat dog"], 2)
-        #results = test_rdd.flatMap(lambda line: line.split()).map(lambda word: (word, 1)).reduceByKey(add).collect()
-        #expected_results = [("cat", 3), ("dog", 2), ("mouse", 1)]
-        #self.assertEqual(set(results), set(expected_results))
         data = self.CommonFunctions.read_files('csv','/home/dwari/workspace/data/CardBase.csv') 
         self.assertEqual(data.count(),500)
 
