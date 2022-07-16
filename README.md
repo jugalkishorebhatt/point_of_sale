@@ -1,4 +1,4 @@
-# point_of_sale
+# point of sale
 
 ## Table of Content
 
