@@ -12,7 +12,7 @@
 
 
 ### Introduction:
-POS application receives transaction data from different retails stores. 
+POS application receives transactional data from different retails stores. 
 
 ### Prerequisite:
 Below are the list of softwares required to run the application:
@@ -29,7 +29,7 @@ Below are the list of softwares required to run the application:
 Main application wihch triggers necessary functions and upload the config file. Which list on how the application should execute.
 
 #### <u>config.yaml</u>
-Esentials parameters required are the module and class name. With other user defined parameters required to make the users part of application interactive.
+Essential parameters required are the module and class name. With other user defined parameters required to make the users part of application interactive.
 
 #### <u>posTrans</u>
 Instanciates dependent application dynamically depending on the module and the class name provided in the config.yaml file
