@@ -55,4 +55,4 @@ spark-submit --master "local[*]" --py-files posTransAgg.py,posTrans.py,common.py
 ### Unit Testing:
 Below is the command to run the unit test:
 
-python3.6 -m unittest run test.PosTestCase
+python3.10 -m unittest run test.PosTestCase
